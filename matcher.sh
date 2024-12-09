@@ -1,5 +1,7 @@
 #!/bin/bash
 
+fimo --motif ATGTTGSCCAGGCTGGTCTYGAACTCCT --text --thresh 1e-16 top_50K_motifs/meme.txt top_50K_peaks.fa > fimo_results_7_GENE.txt #replce with real motif and fimo number
+
 if [[ $# -ne 1 ]]; then
     echo "Usage: $0 <fimo_file>"
     exit 1
